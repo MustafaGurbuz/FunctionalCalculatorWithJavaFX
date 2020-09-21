@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="321.0" prefWidth="558.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.FXMLDocumentController">
+   <children>
+      <GridPane layoutX="3.0" layoutY="68.0" prefHeight="248.0" prefWidth="555.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="68.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="bir" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="79.0" stylesheets="@design.css" text="1">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="dort" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="79.0" stylesheets="@design.css" text="4" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="yedi" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="79.0" stylesheets="@design.css" text="7" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="sifir" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="79.0" stylesheets="@design.css" text="0" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="iki" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="79.0" stylesheets="@design.css" text="2" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="uc" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="79.0" stylesheets="@design.css" text="3" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bolme" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="79.0" styleClass="button1" stylesheets="@design.css" text="/" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bes" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="79.0" stylesheets="@design.css" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="dokuz" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="79.0" stylesheets="@design.css" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="toplama" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="79.0" styleClass="button1" stylesheets="@design.css" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="alti" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="79.0" stylesheets="@design.css" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="carpma" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="79.0" styleClass="button1" stylesheets="@design.css" text="x" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="sekiz" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="79.0" stylesheets="@design.css" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="cikarma" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="79.0" styleClass="button1" stylesheets="@design.css" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="nokta" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="79.0" styleClass="button1" stylesheets="@design.css" text="." GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="temizle" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="79.0" styleClass="button1" stylesheets="@design.css" text="C" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="mod" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="79.0" styleClass="button4" stylesheets="@design.css" text="\%" GridPane.columnIndex="4">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="fakt" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="79.0" styleClass="button4" stylesheets="@design.css" text="x!" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="ustel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="79.0" styleClass="button4" stylesheets="@design.css" text="x^2" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="sin" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="79.0" styleClass="button4" stylesheets="@design.css" text="sin" GridPane.columnIndex="5">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="cos" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="79.0" styleClass="button4" stylesheets="@design.css" text="cos" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="tan" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="79.0" styleClass="button4" stylesheets="@design.css" text="tan" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="fonk" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#graphichAction" prefHeight="62.0" prefWidth="79.0" styleClass="button5" stylesheets="@design.css" text="~f(x)" GridPane.columnIndex="6" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="onust" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="65.0" styleClass="button4" stylesheets="@design.css" text="10^x" GridPane.columnIndex="6" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Calibri" size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="log" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="79.0" styleClass="button4" stylesheets="@design.css" text="log" GridPane.columnIndex="6" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="cot" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="79.0" styleClass="button4" stylesheets="@design.css" text="cot" GridPane.columnIndex="5" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="ustsy" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="79.0" styleClass="button4" stylesheets="@design.css" text="x^y" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="kok" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="79.0" styleClass="button3" stylesheets="@design.css" GridPane.columnIndex="6">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <HBox layoutX="6.0" layoutY="2.0" prefHeight="62.0" prefWidth="572.0" AnchorPane.bottomAnchor="257.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="2.0">
+         <children>
+            <TextField fx:id="textfield" alignment="CENTER_RIGHT" editable="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="313.0" styleClass="textfield" stylesheets="@design.css">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <Button fx:id="sonuc" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="121.0" styleClass="button2" stylesheets="@design.css" text="=">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="geri" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="120.0" styleClass="button2" stylesheets="@design.css" text="&lt;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

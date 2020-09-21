@@ -1,0 +1,32 @@
+.button{
+    
+    -fx-background-color: linear-gradient(to bottom right, #003366 0%, #ff3300 100%);
+    -fx-text-fill: white;
+}
+.button1{
+    
+    -fx-background-color: linear-gradient(to top left, #ffff00 0%, #00cc00 100%);
+    -fx-text-fill: white;
+}
+.button2{
+    -fx-background-color: linear-gradient(to bottom, #ff0000 0%, #ffff00 100%);
+    -fx-text-fill: white;
+}
+.button3{
+    -fx-background-image: url("1.jpg");
+}
+.button4{
+    -fx-background-color: white;
+    -fx-border-color: red;
+    -fx-text-fill: black;
+}
+.button5{
+    -fx-background-color: linear-gradient(to top left, #ff8000 25%, #808080 75%);
+    -fx-text-fill: black;
+     -fx-border-color: red;
+}
+.textfield{
+    
+    -fx-background-color: turquoise;
+    -fx-text-fill: white;
+}
